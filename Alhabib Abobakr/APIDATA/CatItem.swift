@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class CatIten{
+    var catName: String?
+    var catImge: String?
+    
+    
+    init(catName: String, catImge: String) {
+        self.catName = catName
+        self.catImge = catImge
+    }
+    
+}

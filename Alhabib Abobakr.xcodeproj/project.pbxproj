@@ -12,6 +12,10 @@
 		30ABB56D219AF22F00725F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ABB56B219AF22F00725F71 /* Main.storyboard */; };
 		30ABB56F219AF23400725F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30ABB56E219AF23400725F71 /* Assets.xcassets */; };
 		30ABB572219AF23400725F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ABB570219AF23400725F71 /* LaunchScreen.storyboard */; };
+		30ABB57B219B0C4100725F71 /* catCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ABB57A219B0C4100725F71 /* catCell.swift */; };
+		30ABB57E219B0DAF00725F71 /* CatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ABB57D219B0DAF00725F71 /* CatItem.swift */; };
+		30ABB581219B124200725F71 /* Cats.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30ABB580219B124200725F71 /* Cats.plist */; };
+		30ABB584219B351400725F71 /* API+Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ABB583219B351400725F71 /* API+Banner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		30ABB56E219AF23400725F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30ABB571219AF23400725F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30ABB573219AF23400725F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30ABB57A219B0C4100725F71 /* catCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catCell.swift; sourceTree = "<group>"; };
+		30ABB57D219B0DAF00725F71 /* CatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatItem.swift; sourceTree = "<group>"; };
+		30ABB580219B124200725F71 /* Cats.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cats.plist; sourceTree = "<group>"; };
+		30ABB583219B351400725F71 /* API+Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Banner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				30ABB567219AF22F00725F71 /* AppDelegate.swift */,
-				30ABB569219AF22F00725F71 /* ViewController.swift */,
-				30ABB56B219AF22F00725F71 /* Main.storyboard */,
 				30ABB56E219AF23400725F71 /* Assets.xcassets */,
-				30ABB570219AF23400725F71 /* LaunchScreen.storyboard */,
 				30ABB573219AF23400725F71 /* Info.plist */,
+				30ABB582219B349600725F71 /* API */,
+				30ABB57C219B0D8900725F71 /* APIDATA */,
+				30ABB579219B0C0F00725F71 /* Model */,
+				30ABB57F219B0ECC00725F71 /* ViewController */,
+				30ABB56B219AF22F00725F71 /* Main.storyboard */,
+				30ABB570219AF23400725F71 /* LaunchScreen.storyboard */,
 			);
 			path = "Alhabib Abobakr";
+			sourceTree = "<group>";
+		};
+		30ABB579219B0C0F00725F71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30ABB57A219B0C4100725F71 /* catCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30ABB57C219B0D8900725F71 /* APIDATA */ = {
+			isa = PBXGroup;
+			children = (
+				30ABB57D219B0DAF00725F71 /* CatItem.swift */,
+				30ABB580219B124200725F71 /* Cats.plist */,
+			);
+			path = APIDATA;
+			sourceTree = "<group>";
+		};
+		30ABB57F219B0ECC00725F71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				30ABB569219AF22F00725F71 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		30ABB582219B349600725F71 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				30ABB583219B351400725F71 /* API+Banner.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,7 @@
 				30ABB572219AF23400725F71 /* LaunchScreen.storyboard in Resources */,
 				30ABB56F219AF23400725F71 /* Assets.xcassets in Resources */,
 				30ABB56D219AF22F00725F71 /* Main.storyboard in Resources */,
+				30ABB581219B124200725F71 /* Cats.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30ABB56A219AF22F00725F71 /* ViewController.swift in Sources */,
+				30ABB57B219B0C4100725F71 /* catCell.swift in Sources */,
+				30ABB584219B351400725F71 /* API+Banner.swift in Sources */,
 				30ABB568219AF22F00725F71 /* AppDelegate.swift in Sources */,
+				30ABB57E219B0DAF00725F71 /* CatItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

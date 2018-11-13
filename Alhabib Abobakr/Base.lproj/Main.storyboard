@@ -1,24 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CXU-ES-8P9">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alhabib_Abobakr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sv4-MA-6mZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="164"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="zro-Ya-LJA"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gwf-Dp-kTZ">
+                                    <size key="itemSize" width="413" height="164"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="KYd-Wa-d9O">
+                                        <rect key="frame" x="0.0" y="0.0" width="413" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="413" height="164"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="TQW-Lq-INm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="413" height="164"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="TQW-Lq-INm" secondAttribute="trailing" id="3cz-KC-6B0"/>
+                                            <constraint firstItem="TQW-Lq-INm" firstAttribute="top" secondItem="KYd-Wa-d9O" secondAttribute="top" id="D3B-7P-Gvv"/>
+                                            <constraint firstAttribute="trailing" secondItem="TQW-Lq-INm" secondAttribute="trailing" id="ESJ-wd-0We"/>
+                                            <constraint firstItem="TQW-Lq-INm" firstAttribute="leading" secondItem="KYd-Wa-d9O" secondAttribute="leading" id="Kaq-YJ-WmU"/>
+                                            <constraint firstItem="TQW-Lq-INm" firstAttribute="leading" secondItem="KYd-Wa-d9O" secondAttribute="leading" id="d60-CU-8UB"/>
+                                            <constraint firstAttribute="bottom" secondItem="TQW-Lq-INm" secondAttribute="bottom" id="oHv-NH-fKY"/>
+                                            <constraint firstAttribute="bottom" secondItem="TQW-Lq-INm" secondAttribute="bottom" id="wzh-Cp-E8U"/>
+                                            <constraint firstItem="TQW-Lq-INm" firstAttribute="top" secondItem="KYd-Wa-d9O" secondAttribute="top" id="xMi-Sd-YRk"/>
+                                        </constraints>
+                                        <size key="customSize" width="413" height="164"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VKU-rq-vig">
+                                <rect key="frame" x="0.0" y="252" width="414" height="610"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gox-Ev-ofT">
+                                    <size key="itemSize" width="199" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" id="f5v-DZ-cXf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell2" id="ToG-lb-OCw" customClass="catCell" customModule="Alhabib_Abobakr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="199" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="srA-xq-jS4">
+                                                    <rect key="frame" x="10" y="52" width="179" height="115"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الكليات و المعاهد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k00-zb-DDb">
+                                                    <rect key="frame" x="0.0" y="177" width="199" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="k00-zb-DDb" secondAttribute="trailing" id="IW6-Jc-wxK"/>
+                                            <constraint firstItem="k00-zb-DDb" firstAttribute="leading" secondItem="ToG-lb-OCw" secondAttribute="leading" id="LEB-Ku-0qs"/>
+                                            <constraint firstAttribute="bottom" secondItem="k00-zb-DDb" secondAttribute="bottom" constant="2" id="TgC-8h-RKf"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="srA-xq-jS4" secondAttribute="trailing" constant="2" id="cMe-DX-Ltk"/>
+                                            <constraint firstItem="srA-xq-jS4" firstAttribute="top" secondItem="ToG-lb-OCw" secondAttribute="topMargin" id="iOU-Ym-NMK"/>
+                                            <constraint firstItem="srA-xq-jS4" firstAttribute="leading" secondItem="ToG-lb-OCw" secondAttribute="leadingMargin" constant="2" id="jdO-bZ-tvx"/>
+                                            <constraint firstItem="k00-zb-DDb" firstAttribute="top" secondItem="srA-xq-jS4" secondAttribute="bottom" constant="10" id="xEc-be-sDf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="srA-xq-jS4" id="f1u-Qq-iAJ"/>
+                                            <outlet property="label" destination="k00-zb-DDb" id="nqy-8p-AyA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VKU-rq-vig" firstAttribute="top" secondItem="Sv4-MA-6mZ" secondAttribute="bottom" id="Huj-Qm-rvo"/>
+                            <constraint firstItem="VKU-rq-vig" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YgW-gd-K6i"/>
+                            <constraint firstItem="Sv4-MA-6mZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ebb-5P-LRU"/>
+                            <constraint firstItem="Sv4-MA-6mZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="icd-OE-w33"/>
+                            <constraint firstItem="Sv4-MA-6mZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jYs-n6-PXj"/>
+                            <constraint firstItem="VKU-rq-vig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l9S-LJ-gUI"/>
+                            <constraint firstItem="VKU-rq-vig" firstAttribute="top" secondItem="Sv4-MA-6mZ" secondAttribute="bottom" id="n9L-cX-5vl"/>
+                            <constraint firstItem="VKU-rq-vig" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qdJ-EU-aFa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="suY-Py-B0f"/>
+                    <connections>
+                        <outlet property="collectionBanner" destination="Sv4-MA-6mZ" id="vWx-UX-VaB"/>
+                        <outlet property="collectionCat" destination="VKU-rq-vig" id="wOi-cy-BAr"/>
+                        <segue destination="vbJ-4B-1Qy" kind="show" identifier="suge" id="ogC-RY-YdN"/>
+                        <segue destination="y4Z-kp-wSA" kind="show" identifier="suge2" id="XIo-kb-us8"/>
+                        <segue destination="7qA-Vr-MJg" kind="show" identifier="suge3" id="UWq-fU-yrK"/>
+                        <segue destination="MYK-vk-0Mr" kind="show" identifier="suge4" id="DVT-sH-x98"/>
+                        <segue destination="zgL-0x-Ew5" kind="show" identifier="suge5" id="79b-BI-fNJ"/>
+                        <segue destination="N8C-JF-RqW" kind="show" identifier="suge7" id="pVG-ph-whg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1128.985507246377" y="132.88043478260872"/>
+        </scene>
+        <!--الكليات و المعاهد-->
+        <scene sceneID="rjT-72-Biv">
+            <objects>
+                <viewController id="vbJ-4B-1Qy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Vh-sO-kI0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="v6r-HM-OXe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="الكليات و المعاهد" id="txL-mq-NOL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnq-q7-Wfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nVs-kd-jRi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CXU-ES-8P9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LAT-NZ-E3d">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yTS-1P-9n1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKx-sL-zQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="134"/>
+        </scene>
+        <!--الرحلات الدعوية-->
+        <scene sceneID="Aac-eA-rpv">
+            <objects>
+                <viewController id="y4Z-kp-wSA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BY0-l0-Ajr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="G8R-I8-Thc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="الرحلات الدعوية" id="GC7-8m-OS2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gfv-mV-Hiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="853"/>
+        </scene>
+        <!--كتب مؤلفات-->
+        <scene sceneID="pOZ-gN-Yxs">
+            <objects>
+                <viewController id="7qA-Vr-MJg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BgH-ti-Tdr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4ab-Ju-I8r"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="كتب مؤلفات" id="OOC-RD-XGD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GX3-AO-SZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="853"/>
+        </scene>
+        <!--اشعار-->
+        <scene sceneID="ZJP-es-twz">
+            <objects>
+                <viewController id="MYK-vk-0Mr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1oT-c0-Xb1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rqJ-2l-epz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="اشعار" id="aOk-YE-efl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qv-Xl-hSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903" y="-546"/>
+        </scene>
+        <!--ترجمة-->
+        <scene sceneID="Z5f-Dl-aWK">
+            <objects>
+                <viewController id="zgL-0x-Ew5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NdX-rS-yPR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hbD-Nz-zKk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ترجمة" id="nQv-gE-E5n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAf-jO-wya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="-546"/>
+        </scene>
+        <!--صور-->
+        <scene sceneID="Frq-6b-8xo">
+            <objects>
+                <viewController id="N8C-JF-RqW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bTh-4l-naX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hhc-8f-ogI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="صور" id="s1C-OM-sG4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5MM-dE-rfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="853"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="321" height="321"/>
+        <image name="back" width="1246" height="1494"/>
+        <image name="banner" width="1246" height="615"/>
+    </resources>
 </document>

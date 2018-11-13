@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Cats.plist
-   Alhabib Abobakr
-
-   Created by Ahmed Farido on 11/13/18.
-   Copyright (c) 2018 Ahmed Farido. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<dict>
+		<key>CatImage</key>
+		<string>1</string>
+		<key>Catname</key>
+		<string>الكليات و المعاهد</string>
+	</dict>
+	<dict>
+		<key>CatImage</key>
+		<string>2</string>
+		<key>Catname</key>
+		<string>الرحلات الدعوية</string>
+	</dict>
+	<dict>
+		<key>CatImage</key>
+		<string>3</string>
+		<key>Catname</key>
+		<string>كتب مؤلفات</string>
+	</dict>
+	<dict>
+		<key>CatImage</key>
+		<string>4</string>
+		<key>Catname</key>
+		<string>اشعار</string>
+	</dict>
+	<dict>
+		<key>CatImage</key>
+		<string>5</string>
+		<key>Catname</key>
+		<string>ترجمة</string>
+	</dict>
+	<dict>
+		<key>CatImage</key>
+		<string>7</string>
+		<key>Catname</key>
+		<string>صور</string>
+	</dict>
+</array>
 </plist>
