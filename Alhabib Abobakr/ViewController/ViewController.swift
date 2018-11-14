@@ -12,6 +12,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     
     var CatList = Array<CatIten>()
+    var bannrData = [BannerData]()
     
     @IBOutlet weak var collectionCat: UICollectionView!
     @IBOutlet weak var collectionBanner: UICollectionView!
@@ -30,6 +31,23 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
         
         ReadTheCat()
+        handleRefresh() 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handleRefresh()
+    }
+    
+    
+    @objc private func handleRefresh() {
+        
+        API_Banner.banner { (error: Error?, bannrData: [BannerData]?) in
+            if let bannrData = bannrData {
+                self.bannrData = bannrData
+                print("xxx\(self.bannrData)")
+                self.collectionBanner.reloadData()
+            }
+        }
     }
     
     
@@ -57,7 +75,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 0 {
-            return 6
+            return bannrData.count
         }else{
             return CatList.count
         }
@@ -65,9 +83,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView.tag == 0 {
-            let cell = collectionBanner.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-            return cell
-        }else{
+            if  let cell = collectionBanner.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? bannerCell{
+                let banner = bannrData[indexPath.row]
+                cell.configuerCell(prodect: banner)
+                return cell
+            }else{
+                return bannerCell()
+            }
+        }
+        else{
             let cells: catCell = collectionCat.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! catCell
             cells.label.text = CatList[indexPath.row ].catName!
             cells.image.image = UIImage(named: CatList[indexPath.row ].catImge!)
@@ -96,8 +120,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if collectionView.tag == 0 {
-        }else{
             if CatList[indexPath.row].catImge == "1" {
                self.performSegue(withIdentifier: "suge", sender: nil)
             }else if CatList[indexPath.row].catImge == "2"{
@@ -111,8 +133,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             }else if CatList[indexPath.row].catImge == "7"{
                 self.performSegue(withIdentifier: "suge7", sender: nil)
             }else{
+                print("done")
             }
         }
-    }
 }
 

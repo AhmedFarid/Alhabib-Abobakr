@@ -1,8 +1,8 @@
 //
-//  API+Banner.swift
+//  API+trips.swift
 //  Alhabib Abobakr
 //
-//  Created by Ahmed Farido on 11/13/18.
+//  Created by Ahmed Farido on 11/14/18.
 //  Copyright © 2018 Ahmed Farido. All rights reserved.
 //
 
@@ -10,10 +10,11 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class API_Banner: NSObject {
+
+class API_trips: NSObject {
     
-    class func banner(completion: @escaping (_ error: Error?,_ sparParts: [BannerData]?)-> Void) {
-        let url = "http://alhabib-abobakr.com/api_elshekh/MainApp/api_token=222&lang=en&section=slider"
+    class func banner(urls: String, completion: @escaping (_ error: Error?,_ sparParts: [tripsData]?)-> Void) {
+        let url = urls
         
         Alamofire.request(url, method: .post, parameters: nil, encoding: URLEncoding.default, headers: nil) .responseJSON  { response in
             
@@ -31,9 +32,9 @@ class API_Banner: NSObject {
                     return
                 }
                 print(dataArray)
-                var products = [BannerData]()
+                var products = [tripsData]()
                 for data in dataArray {
-                    if let data = data.dictionary, let prodect = BannerData.init(dict: data){
+                    if let data = data.dictionary, let prodect = tripsData.init(dict: data){
                         products.append(prodect)
                     }
                 }
@@ -41,5 +42,5 @@ class API_Banner: NSObject {
             }
         }
     }
-
+    
 }
