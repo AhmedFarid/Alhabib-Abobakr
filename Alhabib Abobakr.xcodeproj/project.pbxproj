@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5B904370DFD869618903CD /* Pods_Alhabib_Abobakr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B261D070DEEEA046F67D9C89 /* Pods_Alhabib_Abobakr.framework */; };
 		30ABB568219AF22F00725F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ABB567219AF22F00725F71 /* AppDelegate.swift */; };
 		30ABB56A219AF22F00725F71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ABB569219AF22F00725F71 /* ViewController.swift */; };
 		30ABB56D219AF22F00725F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ABB56B219AF22F00725F71 /* Main.storyboard */; };
@@ -30,6 +31,9 @@
 		30ABB57D219B0DAF00725F71 /* CatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatItem.swift; sourceTree = "<group>"; };
 		30ABB580219B124200725F71 /* Cats.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cats.plist; sourceTree = "<group>"; };
 		30ABB583219B351400725F71 /* API+Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Banner.swift"; sourceTree = "<group>"; };
+		A2F4A2BDAF1887FD7C0AEEBD /* Pods-Alhabib Abobakr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alhabib Abobakr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alhabib Abobakr/Pods-Alhabib Abobakr.release.xcconfig"; sourceTree = "<group>"; };
+		B261D070DEEEA046F67D9C89 /* Pods_Alhabib_Abobakr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alhabib_Abobakr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7E1F08CEE1011B028D6B517 /* Pods-Alhabib Abobakr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alhabib Abobakr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alhabib Abobakr/Pods-Alhabib Abobakr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5B904370DFD869618903CD /* Pods_Alhabib_Abobakr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				30ABB566219AF22F00725F71 /* Alhabib Abobakr */,
 				30ABB565219AF22F00725F71 /* Products */,
+				792A3B532E34F5971CFFB3DA /* Pods */,
+				67A1F1A4126AB20F6CED4C5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +115,23 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		67A1F1A4126AB20F6CED4C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B261D070DEEEA046F67D9C89 /* Pods_Alhabib_Abobakr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		792A3B532E34F5971CFFB3DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7E1F08CEE1011B028D6B517 /* Pods-Alhabib Abobakr.debug.xcconfig */,
+				A2F4A2BDAF1887FD7C0AEEBD /* Pods-Alhabib Abobakr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30ABB576219AF23400725F71 /* Build configuration list for PBXNativeTarget "Alhabib Abobakr" */;
 			buildPhases = (
+				DB00EA7628EB195EFA17A868 /* [CP] Check Pods Manifest.lock */,
 				30ABB560219AF22F00725F71 /* Sources */,
 				30ABB561219AF22F00725F71 /* Frameworks */,
 				30ABB562219AF22F00725F71 /* Resources */,
+				693BEEFC22F1424914D89C53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +200,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		693BEEFC22F1424914D89C53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Alhabib Abobakr/Pods-Alhabib Abobakr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alhabib Abobakr/Pods-Alhabib Abobakr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB00EA7628EB195EFA17A868 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alhabib Abobakr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30ABB560219AF22F00725F71 /* Sources */ = {
@@ -328,6 +399,7 @@
 		};
 		30ABB577219AF23400725F71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E1F08CEE1011B028D6B517 /* Pods-Alhabib Abobakr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -345,6 +417,7 @@
 		};
 		30ABB578219AF23400725F71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F4A2BDAF1887FD7C0AEEBD /* Pods-Alhabib Abobakr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
