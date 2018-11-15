@@ -20,6 +20,8 @@
 		30118A49219C87800045FCD1 /* peottryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30118A48219C87800045FCD1 /* peottryVC.swift */; };
 		30118A4D219C8B200045FCD1 /* peottryCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30118A4C219C8B200045FCD1 /* peottryCells.swift */; };
 		30118A4F219C8DB70045FCD1 /* peorttryDetilasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30118A4E219C8DB70045FCD1 /* peorttryDetilasVC.swift */; };
+		302271D4219D8A830061A78D /* garphicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302271D3219D8A830061A78D /* garphicsVC.swift */; };
+		302271D6219D8DB00061A78D /* takingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302271D5219D8DB00061A78D /* takingVC.swift */; };
 		30588D48219CB6C7003FFAA2 /* booksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30588D47219CB6C7003FFAA2 /* booksData.swift */; };
 		30588D4A219CB828003FFAA2 /* API+Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30588D49219CB828003FFAA2 /* API+Books.swift */; };
 		30588D4C219CB8C8003FFAA2 /* booksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30588D4B219CB8C8003FFAA2 /* booksCell.swift */; };
@@ -65,6 +67,8 @@
 		30118A48219C87800045FCD1 /* peottryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peottryVC.swift; sourceTree = "<group>"; };
 		30118A4C219C8B200045FCD1 /* peottryCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peottryCells.swift; sourceTree = "<group>"; };
 		30118A4E219C8DB70045FCD1 /* peorttryDetilasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peorttryDetilasVC.swift; sourceTree = "<group>"; };
+		302271D3219D8A830061A78D /* garphicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = garphicsVC.swift; sourceTree = "<group>"; };
+		302271D5219D8DB00061A78D /* takingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takingVC.swift; sourceTree = "<group>"; };
 		30588D47219CB6C7003FFAA2 /* booksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = booksData.swift; sourceTree = "<group>"; };
 		30588D49219CB828003FFAA2 /* API+Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Books.swift"; sourceTree = "<group>"; };
 		30588D4B219CB8C8003FFAA2 /* booksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = booksCell.swift; sourceTree = "<group>"; };
@@ -257,6 +261,8 @@
 		30AF47C7219C5BFB00CFC21E /* Gallary */ = {
 			isa = PBXGroup;
 			children = (
+				302271D5219D8DB00061A78D /* takingVC.swift */,
+				302271D3219D8A830061A78D /* garphicsVC.swift */,
 				30AF47C8219C5C7800CFC21E /* gallaryVC.swift */,
 			);
 			path = Gallary;
@@ -400,6 +406,7 @@
 			files = (
 				30ABB56A219AF22F00725F71 /* ViewController.swift in Sources */,
 				30AF47C6219C57E100CFC21E /* API+Gallary.swift in Sources */,
+				302271D4219D8A830061A78D /* garphicsVC.swift in Sources */,
 				30118A49219C87800045FCD1 /* peottryVC.swift in Sources */,
 				30AF47B9219C442100CFC21E /* tripsData.swift in Sources */,
 				30AF47B2219C2C2C00CFC21E /* API+Instit.swift in Sources */,
@@ -421,6 +428,7 @@
 				30118A4D219C8B200045FCD1 /* peottryCells.swift in Sources */,
 				30118A45219C867D0045FCD1 /* API+Peotry.swift in Sources */,
 				30118A41219C831C0045FCD1 /* translationDetialsVC.swift in Sources */,
+				302271D6219D8DB00061A78D /* takingVC.swift in Sources */,
 				30AF47C2219C517400CFC21E /* tripsDetialsVC.swift in Sources */,
 				30AF47B4219C2DFD00CFC21E /* institCll.swift in Sources */,
 				300580E4219C65830028E13B /* galleryCell.swift in Sources */,

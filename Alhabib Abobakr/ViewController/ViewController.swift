@@ -132,6 +132,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 self.performSegue(withIdentifier: "suge5", sender: nil)
             }else if CatList[indexPath.row].catImge == "7"{
                 self.performSegue(withIdentifier: "suge7", sender: nil)
+            }else if CatList[indexPath.row].catImge == "8"{
+                self.performSegue(withIdentifier: "suge8", sender: nil)
+            }else if CatList[indexPath.row].catImge == "9"{
+                self.performSegue(withIdentifier: "suge9", sender: nil)
             }else{
                 print("done")
             }

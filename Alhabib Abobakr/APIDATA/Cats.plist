@@ -38,5 +38,17 @@
 		<key>Catname</key>
 		<string>صور</string>
 	</dict>
+	<dict>
+		<key>CatImage</key>
+		<string>8</string>
+		<key>Catname</key>
+		<string>رسومات</string>
+	</dict>
+	<dict>
+		<key>CatImage</key>
+		<string>9</string>
+		<key>Catname</key>
+		<string>صور ناطقه</string>
+	</dict>
 </array>
 </plist>
